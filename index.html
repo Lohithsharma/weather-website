@@ -422,7 +422,7 @@
         forecastDay.className = "forecast-day";
         forecastDay.innerHTML = `
           <p>${dayName}</p>
-          <img src="${day.weather[0].main.toLowerCase()}.png" alt="${day.weather[0].main}">
+          <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="${day.weather[0].description}">
           <p>${temp}</p>
         `;
         
@@ -539,5 +539,6 @@ toggleBtn.addEventListener('click', () => {
 </body>
 
 </html>
+
 
 
